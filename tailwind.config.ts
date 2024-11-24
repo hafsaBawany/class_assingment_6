@@ -1,3 +1,4 @@
+import { title } from "process";
 import type { Config } from "tailwindcss";
 
 const config: Config = {
@@ -8,9 +9,13 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily:{
+        roboto: ['Roboto', 'sans-serif'],
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        
       },
     },
   },
